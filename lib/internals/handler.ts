@@ -77,7 +77,7 @@ async function runMainLayer(
       }
 
       const paramType =
-        index < parameterTypes.length &&
+        index < parameterTypes?.length &&
         typeof parameterTypes[index] === 'function' &&
         /^class\s/.test(Function.prototype.toString.call(parameterTypes[index]))
           ? parameterTypes[index]
